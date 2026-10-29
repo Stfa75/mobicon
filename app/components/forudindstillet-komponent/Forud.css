@@ -1,0 +1,79 @@
+
+.wrapper{
+ max-width: 500px;
+}
+
+.forud{
+   width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin:0 auto;
+    margin-top: 10px;
+}
+.homeOn{
+ width: 33%;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+ border-radius: 7px;
+ align-items: center;
+ gap: 7px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ margin-left: 10px;
+}
+.homeOn p{
+    font-size: 0.8em;
+     color: rgb(201, 201, 201);
+}
+.homeOn img{
+    width: 25px;
+    height: 25px;
+}
+.homeOff{
+ width: 30%;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+ border-radius: 7px;
+ align-items: center;
+ gap: 7px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+}
+
+.homeOff p{
+    font-size: 0.8em;
+     color: rgb(201, 201, 201);
+}
+.homeOff img{
+    width: 25px;
+    height: 25px;
+}
+.sover{
+ width: 30%;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+  border-radius: 7px;
+ align-items: center;
+ gap: 7px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ margin-right: 10px;
+}
+
+.sover p{
+    font-size: 0.8em;
+    color: rgb(201, 201, 201);
+}
+.sover img{
+    width: 25px;
+    height: 25px;
+}
+.overskrift{
+margin-right: auto;
+margin-left: 20px;
+font-weight: 900;
+color: rgb(143, 139, 139);
+margin-top: 40px;
+margin-bottom: 15px;
+}

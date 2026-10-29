@@ -1,0 +1,85 @@
+/* Header container */
+.wrapper{
+  max-width: 599px;
+}
+
+.navbar {
+  background-color: transparent; /* Fjernet baggrundsfarven */
+  color: #ffffff;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ændret fra space-between, så de holdes samlet */
+  gap: 40px; /* Sætter præcis 100px afstand mellem burgermenu og logo */
+  height: 64px;
+  padding: 0 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.logo a {
+  color: #0b0b0b;
+  text-decoration: none;
+}
+
+/* Burgermenu knap */
+.hamburger {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hamburger:hover {
+  color: grey;
+}
+
+.hamburgerIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dropdown menu */
+.menu {
+  background-color: #0f172a;
+  border-top: 1px solid #1e293b;
+  padding: 8px 16px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Links i menuen */
+.navLink {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navLink:hover {
+  background-color: #1e293b;
+  color: #38bdf8;
+}

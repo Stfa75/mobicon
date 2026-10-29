@@ -1,0 +1,75 @@
+
+.wrapper{
+    max-width: 500px;
+}
+.dropdown{
+    width: 95%;
+    display: flex;
+    justify-content: end;
+    gap: 10px; 
+    margin-bottom: 10px;
+    
+}
+.overskrift1{
+    margin-right: auto;
+    margin-left: 20px;
+    font-weight: 900;
+    margin-top: 40px;
+    color: rgb(143, 139, 139);
+}
+.spaces{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin:0 auto
+}
+.seng{
+ width: 30%;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+  border-radius: 7px;
+ align-items: center;
+ gap: 7px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ margin-left: 10px;
+}
+.seng p{
+    font-size: 0.8em;
+     color: rgb(201, 201, 201);
+}
+.stol{
+ width: 25%;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+  border-radius: 7px;
+ align-items: center;
+ gap: 7px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+}
+.stol p{
+    font-size: 0.8em;
+     color: rgb(201, 201, 201);
+}
+.bad{
+ width: 33%;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+  border-radius: 7px;
+ align-items: center;
+ gap: 7px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ margin-right: 10px;
+}
+.bad p{
+    font-size: 0.8em;
+    color: rgb(201, 201, 201);
+}
+.dropdown img{
+    width: 11px;
+    height: 7px;
+    align-self: center;
+}
