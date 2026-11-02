@@ -1,0 +1,95 @@
+.wrapper {
+  max-width: 500px;
+  margin-top: 20px;
+
+}
+
+.lysbox {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  margin-left: 10px;
+  padding: 5px; /* Bruger padding i stedet for align-items til at holde indholdet væk fra kanten */
+  padding-bottom: 20px;
+}
+
+.lysbox p {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+/* Rettet her: Sikrer mørkegrå farve, venstrestilling og samme margin som boksen */
+p.stuelys {
+  text-align: left;
+  color: rgb(141, 141, 141);
+  font-weight: 500;
+  margin: 0; /* Nulstiller evt. standard margin fra browseren */
+  font-weight: 900;
+}
+
+/* Gør hver række til sit eget grid med 2 kolonner */
+.lys {
+  width: 85%;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto; /* Tekst tager resten af pladsen, switch har fast størrelse */
+  align-items: center; /* Centrerer indholdet lodret */
+  column-gap: 10px;
+}
+
+.text {
+  grid-column: 1 / 2;
+}
+
+.switch-label {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+  grid-column: 2 / -1; /* Placerer switchen i kolonne 2 */
+}
+
+/* Skjul den rigtige checkbox, men hold den funktionel */
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Selve den ydre "track" (baggrunden) */
+.switch-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 13px;
+  transition: 0.3s;
+}
+
+/* Den runde "knap" inden i (lavet med ::before) */
+.switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Når checkboxen er krydset af (:checked), flyttes knappen og farven skifter */
+.switch-input:checked + .switch-slider {
+  background-color: #0c3774;
+}
+
+.switch-input:checked + .switch-slider::before {
+  transform: translateX(24px);
+}
